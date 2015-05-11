@@ -10,13 +10,13 @@ import org.apache.logging.log4j.LogManager;
  */
 public class helloWorld {
 	
-    private static final Logger log = LogManager.getLogger(helloWorld.class);
+    private static final Logger log = LogManager.getLogger(helloWorld.class.getName());
 	
 	/**
 	 * 
 	 * @param say wird ausgegeben mit System.out.println
 	 */
-	public void say(String say) {
+	static public void say(String say) {
 		
 		System.out.println(say);
 	}
@@ -25,7 +25,7 @@ public class helloWorld {
 	 * 
 	 * @param say wird ausgegeben mit log4j2 
 	 */
-	public void sayInLog4j (String say) {
+	static public void sayInLog4j (String say) {
 		
 		log.info(say);
 	}
