@@ -8,7 +8,7 @@ import org.apache.logging.log4j.LogManager;
  * @author Behar
  *
  */
-public class helloWorld {
+public class HelloWorld {
 	
     private static final Logger log = LogManager.getLogger(helloWorld.class.getName());
 	
