@@ -6,6 +6,8 @@ import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
 
+import com.google.gson.Gson;
+
 
 /**
  * 
@@ -28,6 +30,9 @@ public class Sms {
 	 */
 	public static void senden (String apiKey, Sms sms) throws IOException {
 		try{
+			
+			Gson json = new Gson();
+			
 			//URL 
 			URL url = new URL("tps://api.swisscom.com/v1/"); 
 			
